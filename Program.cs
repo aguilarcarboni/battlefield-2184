@@ -3,7 +3,7 @@
 static class Program {
 
     // Constants
-    static bool development = true;
+    static bool development = false;
 
     // Initialize grid
     const int GRID_SIZE = 10;
@@ -24,21 +24,25 @@ static class Program {
 
         InitializeGrid();
         PlaceShips(grid);
-        
+        Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         while (shipsRemaining > 0 && guessesLeft > 0) {
             Console.WriteLine("Guesses left: " + guessesLeft + '\n');
             PrintGrid(grid);
             int[] guess = GetGuess();
             guessesLeft--;
+            Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
             ProcessGuess(grid, guess[0], guess[1]);
         }
         
         if (guessesLeft == 0) {
-            Console.WriteLine("You've run out of guesses! Better luck next time!");
+            Console.WriteLine("You've run out of guesses! Better luck next time!\n");
         }
         else {
             Console.WriteLine("Congratulations! You've sunk all the ships!");
         }
+        development = true;
+        Console.WriteLine("Board:");
+        PrintGrid(grid);
     }
     static void PlaceShips(int[,] grid) {
         Random random = new Random();
@@ -113,14 +117,19 @@ static class Program {
             Console.Write(i + " ");
             for (int j = 0; j < GRID_SIZE; j++)
             {
-                if (grid[i, j] < 0) {
-                    Console.Write("X ");
+                if (grid[i, j] == -9) {
+                    Console.Write("O ");
+                }
+                else if (grid[i, j] < 0) {
+                    if (development) {
+                        Console.Write(grid[i, j] + " ");
+                    }
+                    else {
+                        Console.Write("X ");
+                    }
                 }
                 else if (grid[i, j] > 0 && development) {
                     Console.Write(grid[i, j] + " ");
-                }
-                else if (grid[i, j] == -9) {
-                    Console.Write("O ");
                 }
                 else {
                     Console.Write(". ");
