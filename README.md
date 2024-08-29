@@ -1,4 +1,4 @@
-# SolitaireBattleship
+# Solitaireship
 
 
 ## Intro
