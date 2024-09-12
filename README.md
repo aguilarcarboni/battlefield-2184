@@ -15,7 +15,7 @@ The game is played on a 10x10 grid. Then, 3 ships are placed:
 
 The ships are placed randomly on the grid at the start of the game. The player will then guess coordinates on the grid to try and sink the ships. The player has 20 guesses to sink all the ships.
 
-## Compiling and running
+### Compiling and running
 
 To install the game, clone the repository and run the following command:
 
