@@ -6,7 +6,7 @@
  
 This gamemode of Battleship constists of a 10x10 grid and a player that must guess coordinates to sink 3 ships. The game is played on a terminal and is implemented in C#.
 
-## Gameplay
+### Gameplay
 The game is played on a 10x10 grid. Then, 3 ships are placed:
 
 - 2-cell ship
@@ -24,6 +24,9 @@ dotnet run
 ```
 
 Ensure you have the .NET SDK installed on your machine. For VSCode setup, follow the instructions [here](https://code.visualstudio.com/docs/languages/dotnet#_setting-up-vs-code-for-net-development).
+
+### Results
+- Scored 100% on the Homework
 
 
 ### created by [@aguilarcarboni](https://github.com/aguilarcarboni/)
