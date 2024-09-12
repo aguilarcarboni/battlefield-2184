@@ -1,7 +1,9 @@
 # Solitaireship
 
+## CS2365: Object Oriented Programming - Homework 1
 
-## Intro
+### Description
+ 
 This gamemode of Battleship constists of a 10x10 grid and a player that must guess coordinates to sink 3 ships. The game is played on a terminal and is implemented in C#.
 
 ## Gameplay
