@@ -38,7 +38,7 @@ Run the program with:
 ```
 
 ### Results
-- Scored 100% on the Homework 1, 2 and 3
+- Scored 100% in all the Homeworks 1, 2 and 3.
 
 
 ### created by [@aguilarcarboni](https://github.com/aguilarcarboni/)
