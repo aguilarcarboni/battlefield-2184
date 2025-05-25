@@ -12,8 +12,6 @@ The only surviving copy of this legendary game was
 found in an old PC Terminal, before the dark ages.
 ```
 
-/// /// /// /// /// /// /// ///
-
 This is a player versus player (PvP) Battleship game implemented in C#. The game is played on a 10x10 grid. At the start of the game, each player has 3 ships placed randomly on their grid. Players take turns guessing the coordinates on the opponent's grid in an attempt to sink their ships. Each player has 20 guesses to sink all of their opponent's ships. 
 
 It consists of two versions:
