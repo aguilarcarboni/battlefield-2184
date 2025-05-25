@@ -24,7 +24,7 @@ The idea of this assignment is to implement the same game using both paradigms a
 
 For a detailed diagram of how the classes and their relationships were implemented, please see the detailed [diagram documentation](diagrams/Diagram.md).
 
-### Compiling and running
+### Compiling and Running
 
 Ensure you have the .NET SDK installed on your machine
 ```bash
